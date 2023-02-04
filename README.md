@@ -1,14 +1,14 @@
-# nexsys-syntax README
+# Nexsys
 
-This is the README for your extension "nexsys-syntax". After writing up a brief description, we recommend including the following sections.
+Simple code for complex problems.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+The Nexsys vscode extension offers both syntax highlighting for .nxs 
+files as well as a solution viewer for viewing the solution to your 
+code in real time.
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
