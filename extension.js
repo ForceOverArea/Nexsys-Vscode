@@ -1,5 +1,5 @@
 const vscode            = require(`vscode`);
-const { live_solve }    = require(`./nexsys-live-solver/pkg/nexsys_live_solver.js`);
+const { live_solve }    = require(`./nexsys-solver-ext/pkg/nexsys_solver_ext.js`);
 
 function activate(context) {
     context.subscriptions.push(
@@ -21,7 +21,7 @@ function activate(context) {
             const logNil = `<table class="debug"><tr><td>${log}</td><td>${nil}</td><tr></table>`
 
             panel.webview.html = getWebviewContent(
-                [soln, logNil].join('<br><hr>')
+                [soln, logNil].join('<br>')
             );
         })
     );
