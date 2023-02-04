@@ -1,0 +1,12 @@
+{
+  "filetypes": ["nxs"],
+  "injectionSelector": "L:string.quoted.multi.python, L:meta.fstring.python, L:string.quoted.double.rust, L:punctuation.definition.string.rust, - (comment.line.number-sign.python, punctuation.definition.comment.python)",
+  "patterns": [{
+    "begin": "\"nxs\"",
+    "end": "\"endnxs\"",
+    "patterns": [{
+      "include": "source.nexsys"
+    }]
+  }],
+  "scopeName": "inline-nexsys.injection"
+}

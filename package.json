@@ -1,0 +1,45 @@
+{
+  "name": "nexsys",
+  "displayName": "Nexsys",
+  "description": "Simple code for complex engineering",
+  "publisher": "Grant C",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [],
+  "main": "./extension",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nexsys",
+      "aliases": ["Nexsys", "nexsys"],
+      "extensions": [".nxs"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./nexsys_logo.png",
+        "dark": "./nexsys_logo.png"
+      }
+    }],
+    "grammars": [
+      {
+        "language": "nexsys",
+        "scopeName": "source.nexsys",
+        "path": "./syntaxes/nexsys.tmLanguage.json"
+      },
+      {
+        "scopeName": "inline-nexsys.injection",
+        "path": "./syntaxes/inline-nxs-injection.json",
+        "injectTo": ["source.python", "source.rust"],
+        "embeddedLanguages": {"meta.embedded.inline.nexsys": "nexsys"}
+      }
+    ],
+    "commands": [{
+      "command": "nexsys.Solve",
+      "title": "Solve",
+      "category": "Nexsys"
+    }]
+  }
+}

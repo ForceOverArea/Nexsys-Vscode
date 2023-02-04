@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "nexsys",
+	"patterns": [
+		{ "include": "#constants" },
+		{ "include": "#entities" },
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#variables" },
+		{ "include": "#comments" }
+	],
+	"repository": {
+		"constants": {
+			"patterns": [{
+				"name": "constant.numeric.nexsys",
+				"match": "[0-9]+\\.?(?:[0-9]+)?" 
+			}]
+		},
+		"entities": {
+			"patterns": [{
+				"name": "entity.name.function.nexsys",
+				"match": "#[a-z_]+"
+			}]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.operator.comparison.nexsys",
+					"match": "\\<=?|\\>=?|\\=\\=|\\!\\="
+				},
+				{
+					"name": "keyword.operator.arithmetic.nexsys",
+					"match": "\\=|\\+|\\-|\\*|\\/|\\^"
+				},	
+				{
+					"name": "keyword.control.nexsys",
+					"match": "\\b(keep|on|guess|for|if|else)\\b"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [{
+				"name": "string.other.nexsys",
+				"match": "\\[[a-z0-9_^/-]+->[a-z0-9_^/-]+\\]"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.nexsys",
+				"match": "[a-zA-Z](?:[a-zA-Z0-9_]+)?"
+			}]
+		},
+		"comments" : {
+			"patterns": [{
+				"name": "comment.block",
+				"match": "\".*?\""
+			}]
+		}
+	},
+	"scopeName": "source.nexsys"
+}
