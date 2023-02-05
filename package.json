@@ -3,6 +3,10 @@
   "displayName": "Nexsys",
   "description": "Simple code for complex engineering",
   "publisher": "Grant C",
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/ForceOverArea/nexsys-vscode"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"
