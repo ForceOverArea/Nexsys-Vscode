@@ -34,7 +34,7 @@
 				},	
 				{
 					"name": "keyword.control.nexsys",
-					"match": "\\b(keep|on|guess|for|if|else)\\b"
+					"match": "\\b(keep|on|guess|for|if|else|end)\\b"
 				}
 			]
 		},
